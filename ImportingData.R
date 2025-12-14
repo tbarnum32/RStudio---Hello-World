@@ -1,3 +1,5 @@
+### Code comes from 'Time Series for Data Science' by Woodward, Sadler and Robertson
+
 ### Import a time series
 library(tswge)
 
