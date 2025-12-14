@@ -25,4 +25,4 @@ ggplot(lynx.df, aes(x = date, y = Y))+
   geom_line(col = "deepskyblue")+
   ylab("Lynx")+
   xlab("Year")+
-  theme_minimal()
+  theme_classic()
