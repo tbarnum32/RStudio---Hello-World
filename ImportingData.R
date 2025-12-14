@@ -17,3 +17,12 @@ data(lynx)
 class(lynx)
 
 plot(lynx)
+
+### To plot the time series with ggplot, convert to a dataframe
+lynx.df <- data.frame(Y = as.matrix(lynx), date = time(lynx))
+ggplot(lynx.df, aes(x = date, y = Y))+
+  geom_point(col = "deepskyblue")+
+  geom_line(col = "deepskyblue")+
+  ylab("Lynx")+
+  xlab("Year")+
+  theme_minimal()
